@@ -1,0 +1,10 @@
+https://github.com/WPIRoboticsProjects/GRIP/wiki/Running-GRIP-on-a-Raspberry-Pi-2
+
+Hostname: visionpi2523.local
+Username: pi
+Password: raspberry
+GRIP Deploy Directory: /home/pi/code/grip
+Project File: project.grip
+
+To Start/Stop Vision:
+	run start_vision.sh OR stop_vision.sh in /home/pi/vision/

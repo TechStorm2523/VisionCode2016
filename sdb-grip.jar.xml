@@ -1,0 +1,194 @@
+<xml version="1.0">
+<dashboard>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.VideoStreamViewerExtension">
+		<location x="0" y="505"/>
+		<property name="Camera IP Address or mDNS name" value="visionpi2523.local:1180/?action=stream"/>
+	</static-widget>
+	<widget field=" Arm Overriden? " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="1002" y="446"/>
+		<width>126</width>
+		<height>31</height>
+	</widget>
+	<widget field=" Winch Overriden? " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="1001" y="409"/>
+		<width>137</width>
+		<height>30</height>
+	</widget>
+	<widget field=" Current Target  RPM " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="848" y="245"/>
+		<height>31</height>
+		<property name="Background" value="255.255.0.255"/>
+		<property name="Font Size" value="20"/>
+	</widget>
+	<widget field=" Current Thottle RPM " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="849" y="277"/>
+		<height>33</height>
+		<property name="Foreground" value="255.255.0.255"/>
+		<property name="Background" value="0.0.0.255"/>
+		<property name="Font Size" value="20"/>
+	</widget>
+	<widget field=" Winch (Arm) Extension Distance " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="864" y="316"/>
+		<width>265</width>
+		<height>31</height>
+		<property name="Foreground" value="255.0.51.255"/>
+		<property name="Font Size" value="20"/>
+	</widget>
+	<widget field=" Launcher Mot RPM (Back) " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.SimpleDial">
+		<location x="1178" y="38"/>
+		<width>192</width>
+		<height>123</height>
+		<property name="Upper Limit" value="8000.0"/>
+		<property name="Tick Interval" value="500.0"/>
+	</widget>
+	<widget field=" Launcher Mot RPM (Front) " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.SimpleDial">
+		<location x="1019" y="41"/>
+		<width>183</width>
+		<height>120</height>
+		<property name="Upper Limit" value="8000.0"/>
+		<property name="Tick Interval" value="500.0"/>
+	</widget>
+	<widget field="Auto Program" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="-7" y="30"/>
+	</widget>
+	<widget field="Joystick Playback Program" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="-8" y="204"/>
+	</widget>
+	<widget field="Joystick Recording Program" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="-6" y="366"/>
+	</widget>
+	<widget field=" Arm Target Angle " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1197" y="427"/>
+		<width>144</width>
+		<height>21</height>
+	</widget>
+	<widget field=" Launcher Lowered? " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="843" y="160"/>
+		<width>183</width>
+		<height>48</height>
+	</widget>
+	<widget field=" Potentiometer Reading" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1133" y="604"/>
+	</widget>
+	<widget field=" Winch Braked? " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="842" y="420"/>
+		<width>148</width>
+		<height>58</height>
+	</widget>
+	<widget field=" Ball? " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="842" y="350"/>
+		<width>99</width>
+		<height>65</height>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="38" y="2"/>
+		<width>118</width>
+		<height>40</height>
+		<property name="Text" value="Auto Mode Select"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="1123" y="258"/>
+		<width>108</width>
+		<height>21</height>
+		<property name="Text" value="Arm"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="1110" y="9"/>
+		<width>139</width>
+		<height>22</height>
+		<property name="Text" value="Launcher Mot RPM"/>
+	</static-widget>
+	<widget field=" Range to Best Target " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1026" y="207"/>
+		<height>35</height>
+		<property name="Font Size" value="24"/>
+	</widget>
+	<widget field=" Status of Launcher " type="String" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1038" y="172"/>
+		<width>303</width>
+		<height>33</height>
+		<property name="Font Size" value="22"/>
+	</widget>
+	<widget field=" Spooled Up " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="842" y="107"/>
+		<width>145</width>
+		<height>48</height>
+	</widget>
+	<widget field=" In Range " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="842" y="4"/>
+		<width>135</width>
+		<height>46</height>
+	</widget>
+	<widget field=" Aligned " type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="843" y="54"/>
+		<width>125</width>
+		<height>47</height>
+	</widget>
+	<widget field="Auto mode" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="-4" y="31"/>
+	</widget>
+	<widget field="Area min %" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="291" y="630"/>
+	</widget>
+	<widget field="Tote sat min" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="614" y="638"/>
+	</widget>
+	<widget field="Tote sat max" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="611" y="617"/>
+	</widget>
+	<widget field="Tote hue max" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="441" y="617"/>
+		<height>20</height>
+	</widget>
+	<widget field="Tote val max" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="780" y="617"/>
+	</widget>
+	<widget field="Tote val min" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="787" y="637"/>
+	</widget>
+	<widget field="Tote hue min" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="445" y="639"/>
+	</widget>
+	<widget field=" Arm Angle " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.SimpleDial">
+		<location x="1130" y="262"/>
+		<height>161</height>
+		<property name="Upper Limit" value="270.0"/>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="11" y="189"/>
+		<width>141</width>
+		<height>26</height>
+		<property name="Text" value="Joystick Playback Selector"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="7" y="341"/>
+		<width>144</width>
+		<height>39</height>
+		<property name="Text" value="Joystick Recording Selector"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="38" y="2"/>
+		<width>118</width>
+		<height>40</height>
+		<property name="Text" value="Auto Mode Select"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="1119" y="318"/>
+		<width>108</width>
+		<height>21</height>
+		<property name="Text" value="Arm"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="1110" y="9"/>
+		<width>139</width>
+		<height>22</height>
+		<property name="Text" value="Launcher Mot RPM"/>
+	</static-widget>
+	<static-widget class="edu.wpi.grip.smartdashboard.GRIPExtension">
+		<location x="183" y="19"/>
+		<width>658</width>
+	</static-widget>
+</dashboard>
+<live-window>
+</live-window>
+</xml>
